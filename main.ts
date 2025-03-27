@@ -6,9 +6,9 @@ radio.onReceivedNumber(function (receivedNumber) {
     }
 })
 radio.onReceivedString(function (receivedString) {
-    if (receivedString == "fdR1") {
+    if (receivedString == "forward_right") {
         Kitronik_Move_Motor.motorOn(Kitronik_Move_Motor.Motors.MotorRight, Kitronik_Move_Motor.MotorDirection.Forward, 50)
-    } else if (receivedString == "fdL1") {
+    } else if (receivedString == "forward_left") {
         Kitronik_Move_Motor.motorOn(Kitronik_Move_Motor.Motors.MotorLeft, Kitronik_Move_Motor.MotorDirection.Forward, 50)
     }
 })
